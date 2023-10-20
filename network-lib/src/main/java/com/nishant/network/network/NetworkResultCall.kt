@@ -1,4 +1,4 @@
-package com.example.network
+package com.nishant.network.network
 
 import okhttp3.Request
 import okio.Timeout

@@ -3,7 +3,7 @@ package com.example.androidrnd.data.repository
 import com.example.androidrnd.data.datasource.remote.service.EmployeeService
 import com.example.androidrnd.data.model.remote.EmployeeListResponse
 import com.example.androidrnd.domain.repository.EmployeeRepository
-import com.example.network.NetworkResult
+import com.nishant.network.network.NetworkResult
 
 class EmployeeRepositoryImpl(val service: EmployeeService):EmployeeRepository {
     override suspend fun getEmployeeList(): NetworkResult<EmployeeListResponse> {

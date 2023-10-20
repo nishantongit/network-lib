@@ -1,7 +1,7 @@
 package com.example.androidrnd.data.datasource.remote.service
 
 import com.example.androidrnd.data.model.remote.EmployeeListResponse
-import com.example.network.NetworkResult
+import com.nishant.network.network.NetworkResult
 import retrofit2.http.GET
 
 

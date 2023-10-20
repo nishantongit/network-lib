@@ -1,7 +1,7 @@
 package com.example.androidrnd.domain.repository
 
 import com.example.androidrnd.data.model.remote.EmployeeListResponse
-import com.example.network.NetworkResult
+import com.nishant.network.network.NetworkResult
 
 
 interface EmployeeRepository {

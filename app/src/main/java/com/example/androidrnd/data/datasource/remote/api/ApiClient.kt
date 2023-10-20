@@ -1,7 +1,7 @@
 package com.example.androidrnd.data.datasource.remote.api
 
 import com.example.androidrnd.data.datasource.remote.service.EmployeeService
-import com.example.network.NetworkResultCallAdapterFactory
+import com.nishant.network.network.NetworkResultCallAdapterFactory
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient

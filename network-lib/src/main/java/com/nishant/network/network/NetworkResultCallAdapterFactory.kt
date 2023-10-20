@@ -1,4 +1,4 @@
-package com.example.network
+package com.nishant.network.network
 
 import retrofit2.Call
 import retrofit2.CallAdapter

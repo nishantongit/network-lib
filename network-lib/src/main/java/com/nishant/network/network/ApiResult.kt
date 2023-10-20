@@ -1,4 +1,4 @@
-package com.example.network
+package com.nishant.network.network
 
 
 sealed interface ApiResult<T : Any>

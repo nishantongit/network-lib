@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.network'
+    namespace 'com.nishant.network'
     compileSdk 33
 
     defaultConfig {
