@@ -10,13 +10,16 @@
 			mavenCentral()
 			maven { url 'https://jitpack.io' }
 		}
-	} ```
+	}
+```
+
 
 ## Add the dependency
 
  ``` dependencies {
- implementation 'com.github.nishantongit:network-lib:1.0.2'
- } ```
+implementation 'com.github.nishantongit:network-lib:1.0.2'
+}
+```
 
 
  ## initialize your service
@@ -27,17 +30,19 @@
  val logging = HttpLoggingInterceptor()
  logging.level = HttpLoggingInterceptor.Level.BODY
  val httpClientBuilder = OkHttpClient.Builder()
-            httpClientBuilder.addInterceptor(logging)
-            return Retrofit.Builder()
-                .baseUrl("https://dummy.restapiexample.com/")
-                .addConverterFactory(MoshiConverterFactory.create(
-                    Moshi.Builder()
-                        .addLast(KotlinJsonAdapterFactory())
-                        .build())
+ httpClientBuilder.addInterceptor(logging)
+ return Retrofit.Builder()
+  .baseUrl("https://dummy.restapiexample.com/")
+   .addConverterFactory(MoshiConverterFactory.create(
+      Moshi.Builder()
+     .addLast(KotlinJsonAdapterFactory())
+    .build())
                 )
                 .addCallAdapterFactory(NetworkResultCallAdapterFactory.create())
                 .client(httpClientBuilder.build()).build()
                 .create(EmployeeService::class.java)
         }
     }
-} ```
+}
+```
+
