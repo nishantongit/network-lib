@@ -4,24 +4,24 @@
 
 ##Add it in your root build.gradle at the end of repositories:
 
-dependencyResolutionManagement {
+`dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 		repositories {
 			mavenCentral()
 			maven { url 'https://jitpack.io' }
 		}
-	}
+	}`
 
 ## Add the dependency
 
- dependencies {
+ `dependencies {
 	        implementation 'com.github.nishantongit:network-lib:1.0.2'
-	}
+	}`
 
 
  ## initialize your service
 
- class ApiClient {
+ `class ApiClient {
     companion object {
         fun getService(): EmployeeService {
             val logging = HttpLoggingInterceptor()
@@ -40,4 +40,4 @@ dependencyResolutionManagement {
                 .create(EmployeeService::class.java)
         }
     }
-}
+}`
