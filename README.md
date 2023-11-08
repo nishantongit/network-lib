@@ -15,18 +15,18 @@
 ## Add the dependency
 
  `dependencies {
-	        implementation 'com.github.nishantongit:network-lib:1.0.2'
-	}`
+ implementation 'com.github.nishantongit:network-lib:1.0.2'
+ }`
 
 
  ## initialize your service
 
  `class ApiClient {
-    companion object {
-        fun getService(): EmployeeService {
-            val logging = HttpLoggingInterceptor()
-            logging.level = HttpLoggingInterceptor.Level.BODY
-            val httpClientBuilder = OkHttpClient.Builder()
+ companion object {
+ fun getService(): EmployeeService {
+ val logging = HttpLoggingInterceptor()
+ logging.level = HttpLoggingInterceptor.Level.BODY
+ val httpClientBuilder = OkHttpClient.Builder()
             httpClientBuilder.addInterceptor(logging)
             return Retrofit.Builder()
                 .baseUrl("https://dummy.restapiexample.com/")
