@@ -14,12 +14,25 @@ dependencyResolutionManagement {
 	}
 ```
 
+if using kts then it to settings.gradle.kts
+
+```
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { setUrl( "https://jitpack.io") }
+    }
+}
+```
+
 
 ## Add the dependency
 
  ```
   dependencies {
-implementation 'com.github.nishantongit:network-lib:1.0.2'
+implementation 'com.github.nishantongit:network-lib:1.0.4'
 }
 ```
 
