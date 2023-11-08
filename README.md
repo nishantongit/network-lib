@@ -59,3 +59,6 @@ interface EmployeeService {
 }
 ```
 
+## Upcoming features
+-> Service builder with default interceptor, convertorfactory and networkresult call adapter factory
+
