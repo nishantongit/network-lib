@@ -49,3 +49,13 @@ class ApiClient {
 }
 ```
 
+## define service like this
+
+```
+
+interface EmployeeService {
+    @GET("/api/v1/employees")
+    suspend fun getItems(): NetworkResult<EmployeeListResponse>
+}
+```
+
