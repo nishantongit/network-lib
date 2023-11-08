@@ -7,8 +7,6 @@ import com.nishant.network.network.NetworkResult
 
 class EmployeeRepositoryImpl(val service: EmployeeService):EmployeeRepository {
     override suspend fun getEmployeeList(): NetworkResult<EmployeeListResponse> {
-
-
         return service.getItems()
 
 //        if (response.isSuccessful) {
