@@ -32,7 +32,7 @@ dependencyResolutionManagement {
 
  ```
   dependencies {
-implementation 'com.github.nishantongit:network-lib:1.0.4'
+implementation 'com.github.nishantongit:network-lib:1.0.1'
 }
 ```
 
